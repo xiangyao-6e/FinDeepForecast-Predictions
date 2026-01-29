@@ -10,7 +10,7 @@ from datetime import datetime
 from qwen_agent.agents.fncall_agent import FnCallAgent
 from qwen_agent.llm import BaseChatModel
 from qwen_agent.llm.schema import ASSISTANT, DEFAULT_SYSTEM_MESSAGE, Message
-from qwen_agent.settings import MAX_LLM_CALL_PER_RUN
+# from qwen_agent.settings import MAX_LLM_CALL_PER_RUN
 from qwen_agent.tools import BaseTool
 from qwen_agent.utils.utils import format_as_text_message, merge_generate_cfgs
 import time
@@ -29,7 +29,7 @@ OBS_END = '\n</tool_response>'
 # MAX_LLM_CALL_PER_RUN = int(os.getenv('MAX_LLM_CALL_PER_RUN', 50))
 # TONGYI_API_KEY = os.getenv('TONGYI_API_KEY')
 # TONGYI_API_BASE = os.getenv('TONGYI_API_BASE')
-from env import TONGYI_API_KEY, TONGYI_API_BASE
+from env import TONGYI_API_KEY, TONGYI_API_BASE, MAX_LLM_CALL_PER_RUN
 
 TOOL_CLASS = [
     FileParser(),

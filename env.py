@@ -29,3 +29,4 @@ SUMMARY_MODEL_NAME = os.environ.get("SUMMARY_MODEL_NAME", "qwen/qwen3-30b-a3b-th
 USE_IDP = os.environ.get("USE_IDP", False)
 
 SANDBOX_FUSION_ENDPOINTS = os.environ.get("SANDBOX_FUSION_ENDPOINTS", "http://localhost:8080/")
+MAX_LLM_CALL_PER_RUN = os.environ.get("MAX_LLM_CALL_PER_RUN", 50)
